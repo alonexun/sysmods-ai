@@ -1,0 +1,83 @@
+Elements: [Er:1,Ni:3]
+Type: AB3
+
+Thermodynamics
+{
+    H/M: 4  # Verbetsky abstract
+
+    Dehydriding
+    {
+
+        DH: [-30720, -25300]      # J/mol  Xie Table 2
+        DS: [-110.26, -107.49]      # J/mol.K  Xie Table 2
+		slope: [2.1, 0.98]
+        centers: [0.25, 0.73]         # fit to Xie isotherm
+
+        widths: [0.4, 0.5]          # fit to Xie isotherm
+        minSpans: [0.03]            # fit to Xie isotherm
+
+
+        From Isotherms: True 
+    }
+
+    Hydriding
+    {
+
+        DH: [-26720, -23080]      # J/mol  Xie Table 2
+        DS: [-104.46, -106.20]      # J/mol.K  Xie Table 2
+
+
+
+        centers: [0.25, 0.8]      # fit to Xie isotherm
+        widths: [0.28, 0.3]       # fit to Xie isotherm
+        minSpans: [0.03]          # fit to Xie isotherm
+
+
+        From Isotherms: True
+    }
+}
+
+Properties
+{
+}
+
+Kinetics
+{
+    Hydriding
+    {
+    }
+
+    Dehydriding
+    {
+    }
+}
+
+Notes
+{
+    TODO: Verbetsky has isotherms. Isotherms have narrow plateau and lower than theoretical capacity.
+}
+
+References
+{
+    Verbetsky
+    {
+        ID:      10.1016/S0360-3199(96)00053-5
+        Authors: V. N. Verbetsky, S. N. Klyamkin, A. Yu. Kovriga, A. P. Besphalov
+        Title:   Hydrogen Interaction with RNi3 Type Intermetallic Compounds at High Gaseous Pressure
+        Journal: International Journal of Hydrogen Energy
+        Year:    1996
+        Volume:  21
+        Pages:   997-1000
+    }
+
+    Xie
+    {
+        ID:      10.1016/j.jallcom.2013.09.153
+        Authors: S. C. Xie, Z. L. Chen, Y. T. Li, T. Z. Si, D. M. Liu, Q. A. Zhang
+        Title:   Hydrogen absorption - desorption features and degradation mechanism of ErNi3 compound
+        Journal: Journal of Alloys and Compounds
+        Year:    2014
+        Volume:  585
+        Pages:   650-655
+    }
+}

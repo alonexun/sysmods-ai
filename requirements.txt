@@ -1,0 +1,5 @@
+numpy>=2.0
+pandas>=2.2
+openpyxl>=3.1
+pytest>=8.0
+pvlib>=0.11  # PV 权威库（L1 依赖，BSD-3）；缺失时 pvlib 冒烟测试自动跳过

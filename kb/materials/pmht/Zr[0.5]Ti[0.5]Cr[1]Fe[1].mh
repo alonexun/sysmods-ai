@@ -1,0 +1,62 @@
+Elements: [Zr:0.5, Ti:0.5, Cr:1, Fe:1]
+Type: AB2
+
+Thermodynamics
+{
+    Weight Percent: 1.80  # Yu
+
+    Dehydriding
+    {
+        DH: -26323      # J/mol  Yu isotherm fit (Figure 3)
+        DS: -105.1      # J/mol.K  Yu isotherm fit (Figure 3)
+        slope:  4       # Yu isotherm fit (Figure 3)
+        
+        From isotherms: true
+    }
+    Hydriding
+    {
+    }
+}
+
+Properties
+{
+}
+
+Kinetics
+{
+    Hydriding
+    {
+        Ca:  153    # Fit to Yu Figure 7 with assumed Ea and P/Peq = 2
+        Ea:  20000  # Assumed
+        
+        pFcn: log
+        wFcn: 1st Order
+    }
+
+    Dehydriding
+    {
+        Ca:  75.3   # Fit to Yu Figure 7 with assumed Ea and P/Peq = 2
+        Ea:  20000  # Assumed
+        
+        pFcn: log
+        wFcn: 1st Order
+    }
+}
+
+Notes
+{
+}
+
+References
+{
+    Yu
+    {
+        ID:      10.1016/0022-5088(85)90368-6
+        Authors: G. Y. Yu, F. Pourarian, W. E. Wallace
+        Title:   The Crystallographic, Thermodynamic and Kinetic Properties of the Zr1-xTixCrFe-H2 System
+        Journal: Journal of Less-Common Metals
+        Year:    1985
+        Volume:  106
+        Pages:   79-87
+    }
+}

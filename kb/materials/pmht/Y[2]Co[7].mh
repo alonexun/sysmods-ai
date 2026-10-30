@@ -1,0 +1,69 @@
+Elements: [Y:2, Co:7]
+Type: A2B7
+
+Thermodynamics
+{
+    H/M:  8  # Yamaguchi, fig 1
+
+    Dehydriding
+    {
+        DH: [-48500, -38500, -32000]     # J/mol  Yamaguchi Table 2 
+        DS: [-111, -117, -121]       # J/mol.K  Yamaguchi Table 2 
+		slope: [0.2, 0.4, 1.2]
+		centers: [0.11, 0.58, 0.9]
+		
+		widths: [0.2, 0.33, 0.16]
+		minSpans: [0.03, 0.03]
+		
+		From Isotherms: true
+        
+        
+    }
+    Hydriding
+    {
+    }
+}
+
+Properties
+{
+}
+
+Kinetics
+{
+    Hydriding
+    {
+    }
+
+    Dehydriding
+    {
+    }
+}
+
+Notes
+{
+}
+
+References
+{
+    Yamaguchi
+    {
+        ID:      10.1016/0022-5088(85)90377-7
+        Authors: M. Yamaguchi, H. Ikeda, T. Ohta, T. Katayama, T. Goto
+        Title:   Influence of Hydrogen on the Magnetic Properties of Y-Co Compounds
+        Journal: Journal of Less-Common Metals
+        Year:    1985
+        Volume:  106
+        Pages:   165-173
+    }
+    
+    VanEssen
+    {
+        ID:      10.1016/0022-5088(80)90227-1
+        Authors: R. H. Van Essen, K. H. J. Buschow
+        Title:   Hydrogen sorption characteristics of Ce-3d and Y-3d intermetallic compounds
+        Journal: Journal of Less-Common Metals
+        Year:    1980
+        Volume:  70
+        Pages:   189-198
+    }
+}

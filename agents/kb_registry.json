@@ -1,0 +1,46 @@
+{
+  "version": "kb-registry-v1.0",
+  "updated": "2026-10-25",
+  "agents": {
+    "orchestrator": {
+      "kb": ["orchestrator/kb/orchestration_rules.md"],
+      "skills": ["orchestrator/skills/SKILL.md"],
+      "version": "kb-orchestration-v1.0"
+    },
+    "grillme": {
+      "kb": ["grillme/kb/scenario_playbooks.md"],
+      "skills": [],
+      "version": "kb-grillme-v1.0"
+    },
+    "retrieval": {
+      "kb": ["retrieval/kb/source_adjudication.md"],
+      "skills": [],
+      "version": "kb-retrieval-v1.0"
+    },
+    "checker": {
+      "kb": ["checker/kb/validation_rules.md"],
+      "skills": [],
+      "version": "kb-checker-v1.0"
+    },
+    "change_order": {
+      "kb": ["change_order/kb/change_patterns.md"],
+      "skills": [],
+      "version": "kb-change-v1.0"
+    },
+    "deliverable": {
+      "kb": [
+        "deliverable/kb/homer_report_structure.md",
+        "deliverable/kb/ibcs_visual_rules.md",
+        "deliverable/kb/report_design_tokens.md",
+        "deliverable/kb/device_card_library.md"
+      ],
+      "skills": ["deliverable/skills/SKILL.md"],
+      "version": "skill-deliverable-v2.1",
+      "external_sources": [
+        "https://www.homerenergy.com/products/pro/docs/3.15/cash_flow_outputs.html",
+        "https://github.com/thomazrossito/ai-data-agents/blob/main/plugins/ai-data-agents/skills/databricks-app-design/references/ibcs-notation.md",
+        "https://github.com/bradrothenberg/ntop-api-share/blob/main/.agents/skills/engineering-html/SKILL.md"
+      ]
+    }
+  }
+}

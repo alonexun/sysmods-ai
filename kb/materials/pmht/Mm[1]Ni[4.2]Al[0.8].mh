@@ -1,0 +1,64 @@
+Elements: [Mm:1,Ni:4.2,Al:0.8]
+Type: AB5
+
+Thermodynamics
+{
+    Weight Percent: 1.10  # Iwakura
+
+    Dehydriding
+    {
+        DH:  -37200      # J/mol  Kodama Table 1
+        DS:  -111.3      # J/mol.K  Kodama Table 1
+        
+        # TODO Iwakura has isotherm (fig 1), and Kodama
+    }
+    Hydriding
+    {
+        DH:  -31910      # J/mol  Kodama Table 1
+        DS:  -99.5       # J/mol.K  Kodama Table 1
+    }
+}
+
+Properties
+{
+}
+
+Kinetics
+{
+    Hydriding
+    {
+    }
+
+    Dehydriding
+    {
+    }
+}
+
+Notes
+{
+}
+
+References
+{
+    Kodama
+    {
+        ID:      10.1016/S0925-8388(99)00173-5
+        Authors: T. Kodama
+        Title:   The thermodynamic parameters for the LaNi5-xAlx-H2 and MmNi5-xAlx-H2 systems
+        Journal: Journal of Alloys and Compounds
+        Year:    1999
+        Volume:  289
+        Pages:   207-212
+    }
+    
+    Iwakura
+    {
+        ID:      10.1016/0013-4686(95)00283-K
+        Authors: C. Iwakura, T. Oura, H. Inoue, M. Matsuoka
+        Title:   Effects of Substitutions with Foreign Metals on the Crystallographic, Thermodynamic and Electrochemical Properties of AB5-Type Hydrogen Storage Alloys
+        Journal: Electrochemica Acta
+        Year:    1995
+        Volume:  41
+        Pages:   117-121
+    }
+}

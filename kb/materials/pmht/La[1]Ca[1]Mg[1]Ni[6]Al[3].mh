@@ -1,0 +1,53 @@
+Elements: [La:1,Ca:1,Mg:1,Ni:6,Al:3]
+Type: AB3
+
+Thermodynamics
+{
+    H/M: 8  # Chen Figure 8a
+
+    Dehydriding
+    {
+        DH:  -36863      # J/mol  Chen Figure 8a isotherm fit
+        DS: -118.2       # J/mol.K  Chen Figure 8a isotherm fit
+        slope: 2.4       # Chen Figure 8a isotherm fit
+        
+        From Isotherms: true
+    }
+    Hydriding
+    {
+        Tc: 320  # Estimated based on narrowing of Chen isotherms
+    }
+}
+
+Properties
+{
+}
+
+Kinetics
+{
+    Hydriding
+    {
+    }
+
+    Dehydriding
+    {
+    }
+}
+
+Notes
+{
+}
+
+References
+{
+    Chen
+    {
+        ID:      10.1016/S0925-8388(00)00694-0
+        Authors: J. Chen, H.T. Takeshita, H. Tanaka, N. Kuriyama, T. Sakai, I. Uehara, M. Haruta
+        Title:   Hydriding properties of LaNi3 and CaNi3 and their substitutes with PuNi3-type structure
+        Journal: J. of Alloys and Compounds
+        Year:    2000
+        Volume:  302
+        Pages:   304-313
+    }
+}

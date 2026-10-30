@@ -1,0 +1,40 @@
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# ---------- 前端构建 ----------
+node_modules/
+apps/web/dist/
+*.log
+npm-debug.log*
+
+# ---------- 运行时产物与本地数据（永不入库） ----------
+output/
+*.db
+*.sqlite3
+*.db-journal
+*.db-wal
+*.db-shm
+.env
+.env.*
+*.session
+
+# ---------- 验证基准数据（许可原因不入库，见 docs/homer_sample_guide.md） ----------
+tests/golden/homer_t1/
+*.hmr
+
+# ---------- 编辑器 / 操作系统 ----------
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini

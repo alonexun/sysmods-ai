@@ -1,0 +1,24 @@
+SysMods — 分布式氢能方案平台（模块化仿真内核 HyFlow + 守恒审计 + 置信度引擎 + 交互式报告）
+Copyright 2026 DES Hydrogen (德斯氢能)
+
+本项目（"SysMods"）代码以 Apache License 2.0 授权（见 LICENSE 文件）。
+
+第三方组件与数据归属：
+
+* pvlib python — BSD-3-Clause — https://pvlib-python.org
+  （PV 精算依赖，可选；缺失时相关冒烟测试自动跳过）
+* 固态储氢材料数据 kb/materials/pmht/*.mh — 数据取自公开发表的
+  合金热力学测量文献（逐文件标注出处，见 kb/materials/README.md）；
+  文件格式源自 PMHT（Metal Hydride Toolbox）。
+* numpy / pandas（BSD-3）、openpyxl / pytest（MIT/PSF）等 Python 依赖
+  — 完整清单见 requirements.txt
+* FastAPI（MIT）及 services/ 相关依赖
+* React 18 / Vite / Babel 等前端依赖（MIT）— 见 apps/web/package.json
+* 报告设计规范参考：nTop engineering HTML report guidance
+  （github.com/bradrothenberg/ntop-api-share）与 IBCS 语义色规则
+* DeepSeek Harness（MIT）— 可选通用工作台集成（integrations/dsh-sysmods/，
+  规划中），非本项目运行时依赖
+
+商标说明：本 License 不授予任何商标权。"DES Hydrogen"、"DESHY"、"德斯氢能"
+及相关标识为 DES Hydrogen（德斯氢能）的品牌与商标；"SysMods"、"SysMods AI"、
+"HyFlow" 为其项目与产品名称。

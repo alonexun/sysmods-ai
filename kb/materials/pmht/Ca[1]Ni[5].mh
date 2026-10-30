@@ -1,0 +1,68 @@
+Elements: [Ca: 1, Ni: 5]
+Type: AB5
+
+Thermodynamics
+{
+    Weight Percent: 1.15   #Liang Fig 5 reversible capacity
+    
+    Dehydriding 
+    { 
+        DH: -29716  # J/mol, Liang Figure 5
+        DS: -92.9   # J/mol.K, Liang Figure 5
+        slope: 0.1  # Liang Figure 5
+        
+        From Isotherms: true
+    } 
+    Hydriding
+    {
+        ln(Pa/Pd): 0.45  # Liang Figure 5
+        T: 353           # Liang Figure 5
+    }
+}
+ 
+Properties
+{
+    rho: 6600		# kg/m^3, ref sandrock
+}
+ 
+Kinetics
+{
+    Hydriding
+    {    
+    }
+    
+    Dehydriding
+    { 
+    }
+}
+ 
+Notes
+{
+}
+        
+References
+{
+    Sandrock
+    {
+        ID:      10.1016/S0925-8388(99)00384-9
+        Authors: G. Sandrock
+        Title:   A panoramic overview of hydrogen storage alloys from a gas reaction point of view
+        Journal: Journal of Alloys and Compounds
+        Year:    1999
+        Volume:  293-295
+        Pages:   877-888
+    }
+    
+    Liang
+    {
+        ID:      10.1016/S0925-8388(01)01010-6
+        Authors: G. Liang, J. Huot, R. Schultz
+        Title:   Mechanical alloying and hydrogen storage properties of CaNi5-based alloys
+        Journal: J. of Alloys and Compounds
+        Year:    2001
+        Volume:  321
+        Pages:   146-150
+    }
+}
+ 
+

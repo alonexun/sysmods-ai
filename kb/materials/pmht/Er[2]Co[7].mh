@@ -1,0 +1,55 @@
+Elements: [Er:2,Co:7]
+Type: A2B7
+
+Thermodynamics
+{
+    Weight Percent: 1.30  # Goudy
+
+    Dehydriding
+    {
+        DH:  [-35500, -32500, -29600, -28250]      # J/mol  Goudy
+        DS: [-104, -106, -108.89, -115]      # J/mol.K  Goudy
+		slope: [0.25, 0.4, 0.33, 0.4]
+		centers: [0.17, 0.41, 0.71, 0.95]
+		
+		widths: [0.30, 0.13, 0.21, 0.05]
+		minSpans: [0.03, 0.03, 0.03]
+		
+		From Isotherms: true
+    }
+    Hydriding
+    {
+    }
+}
+
+Properties
+{
+}
+
+Kinetics
+{
+    Hydriding
+    {
+    }
+
+    Dehydriding
+    {
+    }
+}
+
+Notes
+{
+}
+
+References
+{
+    Goudy
+    {
+        ID:      SandiaDBRef0186
+        Authors: A. J. Goudy
+        Title:   Hydrogen Solubility in Rare Earth Intermetallic Compounds
+        Journal: Thesis, University of Pittsburgh
+        Year:    1976
+        Pages:   1-115
+    }
+}

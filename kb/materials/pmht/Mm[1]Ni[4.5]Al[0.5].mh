@@ -1,0 +1,69 @@
+Elements: [Mm:1, Ni:4.5, Al:0.5]
+Type: AB5
+ 
+Thermodynamics
+{
+    Weight Percent: 1.2 # Sandrock Table 1
+    
+    Dehydriding 
+    { 
+        DH: -30500		# J/mol - Kodama Table 1
+        DS: -107.2   	# J/mol.K - Kodama Table 1
+        slope: 0.36     # Sandrock Table 1
+    } 
+    Hydriding
+    {
+        #ln(Pa/Pd): 0.11  # Sandrock Table 1
+        
+        DH: -25700		# J/mol - Kodama Table 1
+        DS: -95.2  		# J/mol.K - Kodama Table 1
+    }
+}
+ 
+Properties
+{
+    rho: 8100			# kg/m3 Sandrock Table 1
+}
+ 
+Kinetics
+{
+    Hydriding
+    {    
+    }
+    
+    Dehydriding
+    { 
+    }
+}
+ 
+Notes
+{
+    # TODO Kodama has isotherms
+}
+        
+References
+{
+    Kodama
+    {
+        ID:      10.1016/S0925-8388(99)00173-5
+        Authors: T. Kodama
+        Title:   The thermodynamic parameters for the LaNi5-xAlx-H2 and MmNi5-xAlx-H2 systems
+        Journal: Journal of Alloys and Compounds
+        Year:    1999
+        Volume:  289
+        Pages:   207-212
+    }
+    
+    Sandrock
+    {
+        ID:      10.1016/S0925-8388(99)00384-9
+        Authors: G. Sandrock
+        Title:   A panoramic overview of hydrogen storage alloys from a gas reaction point of view
+        Journal: Journal of Alloys and Compounds
+        Year:    1999
+        Volume:  293-295
+        Pages:   877-888
+    }
+}
+ 
+
