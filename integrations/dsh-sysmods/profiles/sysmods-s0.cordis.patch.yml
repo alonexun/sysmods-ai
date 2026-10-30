@@ -1,0 +1,24 @@
+# SysMods S0 隔离基线 patch —— DSH profile: sysmods-s0（基于 headless 模板）
+# 依据：主计划 V1.3 §11 S0（默认关闭日志上传和 Shell）、§8.6（日志出口/运行隔离/供应链）
+# 层序：dsh-base + dsh-headless bundles → 本文件（profile patch）→ $DSH_HOME/cordis.patch.yml（home 层，S0 保持 []）
+# 应用方式：复制本文件内容到 $DSH_HOME/profiles/sysmods-s0/cordis.patch.yml（bootstrap-s0.ps1 自动执行）
+# 验证方式：dsh --profile sysmods-s0 --dump-config → 对照 integrations/dsh-sysmods/dsh/s0-dump-patched.yml
+#
+# 覆盖对象与理由：
+#   1) session-log-deepseek —— 官方 DeepSeek 请求附带 dsh_session_log 会话日志字段（默认 enabled: true）→ 置 false
+#   2) session-telemetry-otel —— OTel 反馈遥测导出（默认 FEEDBACK_ONLY，仍外发 dsh-otel-collector.deepseeksvc.com）→ 置 DISABLED（不构造传输）
+#   3) tool-bash / tool-pwsh —— Shell 执行工具（Windows 下 tool-pwsh 生效）→ S0 默认禁用；确需启用走一次性沙箱+命令白名单（S2 后评估）
+#   4) tool-jobs —— 后台任务执行面（同样可执行命令）→ 一并禁用
+
+- id: session-log-deepseek
+  config:
+    enabled: false
+- id: session-telemetry-otel
+  config:
+    mode: DISABLED
+- id: tool-bash
+  disabled: true
+- id: tool-pwsh
+  disabled: true
+- id: tool-jobs
+  disabled: true
