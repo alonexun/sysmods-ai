@@ -1,4 +1,4 @@
-﻿# SysMods x DSH —— S0 隔离基线一键搭建
+﻿﻿﻿﻿# SysMods x DSH —— S0 隔离基线一键搭建
 # 依据：主计划 V1.3 §11 S0 / §8.6 DSH 供应链与数据边界
 # 用法：powershell -ExecutionPolicy Bypass -File bootstrap-s0.ps1 [-DshRepo <path>] [-DshHome <path>]
 # 幂等：重复执行会重建 profile（--from-default-profile 为 create/replace 语义）并重放 patch

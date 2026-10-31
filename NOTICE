@@ -13,6 +13,8 @@ Copyright 2026 DES Hydrogen (德斯氢能)
 * numpy / pandas（BSD-3）、openpyxl / pytest（MIT/PSF）等 Python 依赖
   — 完整清单见 requirements.txt
 * FastAPI（MIT）及 services/ 相关依赖
+* MCP Python SDK（`mcp`，MIT — modelcontextprotocol/python-sdk）—
+  services/mcp_server.py（DSH/外部 Agent stdio 受控工具接入）使用
 * React 18 / Vite / Babel 等前端依赖（MIT）— 见 apps/web/package.json
 * 报告设计规范参考：nTop engineering HTML report guidance
   （github.com/bradrothenberg/ntop-api-share）与 IBCS 语义色规则

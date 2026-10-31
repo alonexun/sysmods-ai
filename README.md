@@ -44,6 +44,9 @@ cd apps/web && npm install && npm run build
 
 # 5. 演示（T1 离网光储氢电端到端 + Excel 计算书）
 python scripts/run_demo.py
+
+# 6.（可选）DSH / 外部 MCP Agent 受控工具接入（stdio）
+python -m services.mcp_server   # DSH 侧 mcp-client 配置见 integrations/dsh-sysmods/
 ```
 
 LLM 接入（可选）：设置环境变量 `DEEPSEEK_API_KEY` 即真实调用；不设置则全链路
@@ -66,9 +69,11 @@ kb/
   materials/pmht/       #   固态储氢材料库（.mh，出处见 kb/materials/README.md）
 agents/                 # 编排 Agent（orchestrator/grillme/change_order…）
 services/api/           # FastAPI：/session /run /optimize /report（X-Token 鉴权）
+services/mcp_server.py  # DSH/外部 MCP Agent 受控工具（create/补参/仿真/只读卡，stdio）
 services/reports/       # 报告数据层 + 设备卡 + SVG 系统图 + Excel/HTML 导出
 apps/web/               # Vite + React 18：工作台 + 交互式报告
-tests/                  # 225 项测试与物理锚点（手工可验算）
+integrations/dsh-sysmods/  # DeepSeek Harness 集成：版本锁/S0-S1 基线/profile patch/复现脚本
+tests/                  # 225+ 项测试与物理锚点（手工可验算）
 docs/                   # HOMER 官方示例合法对标指南等
 ```
 
