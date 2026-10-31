@@ -8,4 +8,4 @@ pvlib>=0.11  # PV 权威库（L1 依赖，BSD-3）；缺失时 pvlib 冒烟测�
 fastapi>=0.110
 httpx>=0.27        # fastapi TestClient 依赖
 uvicorn>=0.30      # 本地服务：python -m uvicorn services.api.main:app --port 8765
-mcp>=1.6           # DSH/外部 Agent stdio 受控工具：python -m services.mcp_server
+mcp>=1.6,<2        # DSH/外部 Agent stdio 受控工具：python -m services.mcp_server（2.x 改名 MCPServer，迁移后放开上限）
